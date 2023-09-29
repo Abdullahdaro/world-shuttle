@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
     background: #fff;
 }
 
@@ -22,7 +21,6 @@
 
 .btn {
     font-size: 25px;
-    padding-top: 30px;
 }
 
 .left-side {
@@ -31,7 +29,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    height: 96.869px;
 }
 
 .header {
@@ -42,7 +39,6 @@
     font-weight: 300;
     line-height: 22px; /* 137.5% */
     letter-spacing: -0.32px;
-    padding-top: 19px;
 }
 
 .lang {
@@ -53,7 +49,6 @@
     background-color: #37387B;
     padding: 5px;
     border-radius: 5px;
-    margin-top: 19px;
     
 }
 
@@ -70,7 +65,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding-top: 19px;
+
 }
 
 .login img {
@@ -88,8 +83,7 @@
     line-height: 22px; /* 137.5% */
     letter-spacing: -0.32px;
     background-color: #fff;
-    margin: 0;
-    padding: 0;
     border: none;
+    cursor: pointer;
 }
 
