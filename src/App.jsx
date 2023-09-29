@@ -1,6 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { UserContextProvider } from './constants/UserContext'
+import Navbar from './component/navbar/Navbar'
+import Footer from './component/footer/Footer'
+import LandingPAge from './pages/Landingpage/LandingPage'
+import SearchResults from './pages/Searchingpage/SeachResults'
+import Booking from './pages/booking/Booking'
+import Login from './component/login/Login'
+import Signup from './component/register/Signup'
+
 import './App.css'
 
 function App() {
