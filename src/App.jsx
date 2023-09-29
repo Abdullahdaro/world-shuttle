@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { UserContextProvider } from './constants/UserContext'
 import Navbar from './component/navbar/Navbar'
 import Footer from './component/footer/Footer'
-import LandingPAge from './pages/Landingpage/LandingPage'
+import LandingPage from './pages/Landingpage/LandingPage'
 import SearchResults from './pages/Searchingpage/SeachResults'
 import Booking from './pages/booking/Booking'
 import Login from './component/login/Login'
@@ -22,7 +22,7 @@ function App() {
             <div className='contrainer'>
               <Navbar />
               <Routes >
-                <Route path='/' element={(LandingPAge)}/>
+                <Route path='/' element={<LandingPage/>}/>
                 <Route path='/results/:searchTerm' element={<SearchResults />} />
                 <Route path='/reservation' element={<Booking />} />
                 <Route path='/login' element={<Login />} />
