@@ -19,7 +19,7 @@ function App() {
       <div className='app'>
         <UserContextProvider>
           <BrowserRouter>
-            <div className='contrainer'>
+            <div>
               <Navbar />
               <Routes >
                 <Route path='/' element={<LandingPage/>}/>
