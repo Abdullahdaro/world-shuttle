@@ -1,8 +1,8 @@
 .main-bookingForm {
     display: flex;
     justify-content: flex-end; /* Align to the end of the right page */
-    margin-right: 40px; /* Add a right margin of 40px */
-    height: 100vh; /* Optionally, set a height to make it fill the viewport */
+    margin-right: 200px; /* Add a right margin of 40px */
+    height: 90vh; /* Optionally, set a height to make it fill the viewport */
     align-items: center; /* Vertically center the content */
   }
 
@@ -10,7 +10,7 @@
     position: absolute;
     z-index: 1;
     width: 100%; /* Full width of the viewport */
-    height: 90vh; /* Full height of the viewport */
+    height: 95vh; /* Full height of the viewport */
     top: 97.2px; /* Position it at the top of the viewport */
     left: 0; /* Position it at the left of the viewport */
 }
