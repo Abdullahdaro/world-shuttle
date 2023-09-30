@@ -1,15 +1,13 @@
-.main {
-    position: relative;
-    overflow: hidden;
-    height: auto;
-    padding: 0px;
-    margin: 0px;
+.main-bookingForm {
     display: flex;
-    ;
-}
+    justify-content: flex-end; /* Align to the end of the right page */
+    margin-right: 40px; /* Add a right margin of 40px */
+    height: 100vh; /* Optionally, set a height to make it fill the viewport */
+    align-items: center; /* Vertically center the content */
+  }
 
 .mainpic {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     width: 100%; /* Full width of the viewport */
     height: 90vh; /* Full height of the viewport */

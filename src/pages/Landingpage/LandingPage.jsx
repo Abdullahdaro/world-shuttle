@@ -9,7 +9,7 @@ import location from '../../assets/location.png'
 
 const LandingPage = () => {
   return (
-  <div className='main'>
+  <div className='main-bookingForm'>
     <img className='mainpic' src={mainPic} alt='mainpic' />
     <div className='booking'>
       <h1 className='booking-header'>Book your shuttle</h1>
