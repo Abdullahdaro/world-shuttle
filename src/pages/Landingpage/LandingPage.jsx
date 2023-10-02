@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './landingpage.css'
 import mainPic from '../../assets/mainPic.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +12,17 @@ import locationIcon from '../../assets/locationIcon.png'
 import salary from '../../assets/salary.png'
 
 
+
 const LandingPage = () => {
+  const [message, setMessage] = useState('');
+  const messageInputRef = React.createRef();
+
+  const formatText = (command, value = null) => {
+    document.execCommand(command, false, value);
+    messageInputRef.current.focus();
+  };
+
+
   return (
     <>
       <div className='main-bookingForm'>
@@ -71,21 +81,37 @@ const LandingPage = () => {
       </div>
       <div className='who-we-are'>
         <h1>Who we are?</h1>
-        <p>At Turkey Shuttle, we are not just providers of transportation; we are the architects of unforgettable journeys. Our mission is simple yet profound: to create experiences that transcend the ordinary, connecting you to your destination in the most comfortable, convenient, and cost-effective way possible.</p>
-        <p>We are more than a service; we are your companions on the road to adventure. Together, let's turn every trip into an extraordinary tale, and every traveler into a happy arrival. Welcome to Turkey Shuttle, where every journey is a chapter waiting to be written.</p>
+        <p>At <span>Turkey Shuttle,</span> we are not just providers of <span>transportation;</span> we are the architects of <span>unforgettable</span> <span>journeys</span>. Our mission is simple yet profound: to create experiences that transcend the ordinary, connecting you to your destination in the most <span>comfortable, convenient, and cost-effective way </span>possible.</p>
+        <p>We are more than <span>service</span>; we are your companions on the road to adventure. Together, let's turn every trip into an extraordinary tale, and every traveler into a happy arrival. <span>Welcome to Turkey Shuttle,</span> where every journey is a <span>chapter</span> waiting to be written.</p>
       </div>
       <div className='comments'>
         <h1>Be Sure & Chat With Us</h1>
         <div className='information-comments'>
           <input className='input-comment' type='text' placeholder='Name' />
           <input className='input-comment' type='text' placeholder='Email' />
-          <input className='input-comment-message' type='text' placeholder='Message' />
-          <div className='btn-comment'>Send</div>
+          <div className="input-container">
+            <input
+              ref={messageInputRef}
+              placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="input-comment-message"
+              type="text"
+            />
+{/*             <div className="format-toolbar">
+              <button onClick={() => formatText('bold')}>Bold</button>
+              <button onClick={() => formatText('italic')}>Italic</button>
+              <button onClick={() => formatText('strikethrough')}>Strikethrough</button>
+              <button onClick={() => formatText('insertUnorderedList')}>Bulleted List</button>
+              <button onClick={() => formatText('insertOrderedList')}>Numbered List</button>
+              <button onClick={() => formatText('formatBlock', 'BLOCKQUOTE')}>Block Quote</button>
+              <button onClick={() => formatText('formatBlock', 'PRE')}>Code</button>
+            </div> */}
+          </div>
         </div>
+        <div className='btn-comment'><span>Send Message</span></div>
       </div>
     </>
-
-
   )
 }
 
