@@ -85,3 +85,93 @@
     line-height: 24px;
     font-family: inter;
   }
+
+  .our-values {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .our-values h1 {
+    color: #545F71;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+  
+  .values-contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 100px;
+    max-width: 1400px; /* Optional: Limit the maximum width of the items */
+    margin: 0 auto; 
+  }
+  
+  .values-contents > div {
+    text-align: center;
+    width: 283px;
+    height: auto;
+    overflow: hidden; /* Hide overflow outside the circle */
+  }
+  
+  .first-value-content > div {
+    position: absolute;
+    width: 283px;
+    height: 240px;
+    border-radius: 50%;
+    background: rgba(124, 125, 176, 0.90);
+    filter: blur(28px);
+    z-index: -1; /* Place it behind content */
+  }
+
+  .second-value-content > div {
+    position: absolute;
+    width: 283px;
+    height: 240px;
+    border-radius: 50%;
+    background: rgba(124, 125, 176, 0.90);
+    filter: blur(28px);
+    z-index: -1; /* Place it behind content */
+  }
+  
+  .third-value-content > div {
+    position: absolute;
+    width: 283px;
+    height: 240px;
+    border-radius: 50%;
+    background: rgba(124, 125, 176, 0.90);
+    filter: blur(28px);
+    z-index: -1; /* Place it behind content */
+  }
+  
+  .fourth-value-content > div {
+    position: absolute;
+    width: 283px;
+    height: 240px;
+    border-radius: 50%;
+    background: rgba(124, 125, 176, 0.90);
+    filter: blur(28px);
+    z-index: -1; /* Place it behind content */
+  }
+  
+  
+  .values-contents img {
+    width: 150px; /* Adjust the image size as needed */ /* Add relative positioning */
+    z-index: 1; /* Place the image above the background */
+    margin: 30px 0 0 15px;
+  }
+  
+  .values-contents p {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 80px 10px 0 15px;
+    position: relative; /* Add relative positioning */
+    z-index: 2; /* Place the text above the background */
+  }
