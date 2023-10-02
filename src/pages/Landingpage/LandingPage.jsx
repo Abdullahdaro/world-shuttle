@@ -36,13 +36,13 @@ const LandingPage = () => {
           </div>
           <div className='booking-input'>
             <div className='input-group'>
-              <div className='input-container'>
+              <div className='input-container-searching'>
               <img className='plane1' src={plane1} alt='plane1' />
                 <input className='input' type='text' placeholder='From' />
               </div>
             </div>
             <div className='input-group'>
-              <div className='input-container'>
+              <div className='input-container-searching'>
                 <img className='location' src={locationIcon} alt='location' />
                 <input className='input' type='text' placeholder='To' />
               </div>
