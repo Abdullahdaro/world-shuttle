@@ -69,6 +69,20 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <div className='who-we-are'>
+        <h1>Who we are?</h1>
+        <p>At Turkey Shuttle, we are not just providers of transportation; we are the architects of unforgettable journeys. Our mission is simple yet profound: to create experiences that transcend the ordinary, connecting you to your destination in the most comfortable, convenient, and cost-effective way possible.</p>
+        <p>We are more than a service; we are your companions on the road to adventure. Together, let's turn every trip into an extraordinary tale, and every traveler into a happy arrival. Welcome to Turkey Shuttle, where every journey is a chapter waiting to be written.</p>
+      </div>
+      <div className='comments'>
+        <h1>Be Sure & Chat With Us</h1>
+        <div className='information-comments'>
+          <input className='input-comment' type='text' placeholder='Name' />
+          <input className='input-comment' type='text' placeholder='Email' />
+          <input className='input-comment-message' type='text' placeholder='Message' />
+          <div className='btn-comment'>Send</div>
+        </div>
+      </div>
     </>
 
 
