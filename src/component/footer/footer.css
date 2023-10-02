@@ -1,0 +1,38 @@
+.footer {
+    background: rgba(177, 178, 242, 0.22);
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .firstLine-footer, .secondLine-footer {
+    max-width: 1400px; /* Set the max width */
+    margin: 0 auto; /* Center-align the content horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center-align the items horizontally */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  .firstLine-footer p, .secondLine-footer p {
+    color: #37387B; /* Set the text color */
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 225% */
+    letter-spacing: -0.32px;
+    margin: 19px 10px; /* Add margin to separate items */
+  }
+
+   .secondLine-footer p {
+    color: #000; /* Set the text color */
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 225% */
+    letter-spacing: -0.32px;
+    margin: 5px 10px;
+    margin-bottom: 60PX; /* Add margin to separate items */
+  }
