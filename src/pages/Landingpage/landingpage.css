@@ -27,7 +27,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 490px;
+    width: 600px;
     height: 412px;
 }
 
@@ -37,7 +37,7 @@
     align-items: start;
 }
 
-.input-group {
+.input-group-searching {
     display: flex;
     flex-direction: column;
     padding: 10px 39px 13px 15px;
