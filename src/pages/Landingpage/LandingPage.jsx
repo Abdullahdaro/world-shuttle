@@ -55,6 +55,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className='our-values'>
+        
         <h1>Our Values</h1>
         <div className='values-contents'>
           <div className='first-value-content'>
