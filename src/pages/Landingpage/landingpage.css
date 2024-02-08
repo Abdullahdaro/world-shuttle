@@ -37,6 +37,19 @@
     align-items: start;
 }
 
+.start p span {
+  margin-left: 5px;
+}
+
+.booking-input {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .input-group-searching {
     display: flex;
     flex-direction: column;
@@ -45,7 +58,7 @@
     gap: 10px; /* Adjust the gap between input elements */
     border-radius: 6px;
     border: 1px solid #545F71;
-    background: rgba(55, 56, 123, 0.50);
+    background-color: rgba(55, 56, 123, 0.1);
   }
 
   .input-container-searching {
